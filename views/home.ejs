@@ -5,9 +5,10 @@
 
 <% console.log(posts) %>
 
-<% for (let i = 0; i < posts.length; i++) { %>
-    <% console.log(posts[i].title) %>
-<% }; %>
+<!-- for.Each Method -->
+<% posts.forEach(function(post) { %>
+  <% console.log(post.title) %>
+<% }) %>
 
  
 <%- include("partials/footer") -%>
